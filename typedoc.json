@@ -1,0 +1,6 @@
+{
+  "entryPoints": [
+    "src/public_api.ts"
+  ],
+  "out": "docs"
+}

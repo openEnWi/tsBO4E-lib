@@ -2,12 +2,13 @@
   "name": "bo4e-ts",
   "version": "0.0.1",
   "description": "Geschäftsobjekte der Energiewirtschaft (BO4E) TS-Library",
-  "main": "lib/index.js",
-  "typings": "lib/index.d.ts",
+  "main": "lib/public_api.js",
+  "typings": "lib/public_api.d.ts",
   "scripts": {
     "test": "jest",
-    "prepare": "npm run build",
-    "build": "tsc"
+    "prepare": "npm run test && npm run build && npm run docs:generate",
+    "build": "tsc",
+    "docs:generate": "npx typedoc"
   },
   "jest": {
     "transform": {
@@ -38,6 +39,7 @@
     "@types/jest": "^27.0.3",
     "jest": "^27.4.5",
     "ts-jest": "^27.1.2",
+    "typedoc": "^0.22.10",
     "typescript": "^4.5.4"
   }
 }
