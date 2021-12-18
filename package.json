@@ -4,9 +4,13 @@
   "description": "Geschäftsobjekte der Energiewirtschaft (BO4E) TS-Library",
   "main": "lib/public_api.js",
   "typings": "lib/public_api.d.ts",
+  "repository": {
+    "url": "https://github.com/openEnWi/tsBO4E-lib.git"
+  },
   "scripts": {
-    "lint": "npx eslint src/**",
+    "lint": "npx eslint src/**/*.ts",
     "test": "jest",
+    "test:dev": "jest --watchAll",
     "prepare": "npm run lint && npm run test && npm run build && npm run docs:generate",
     "build": "tsc",
     "docs:generate": "npx typedoc"

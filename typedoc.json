@@ -2,5 +2,8 @@
   "entryPoints": [
     "src/public_api.ts"
   ],
+  "exclude": [
+    "src/**/*.spec.ts"
+  ],
   "out": "docs"
 }

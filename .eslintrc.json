@@ -24,6 +24,7 @@
             {
                 "code": 120
             }
-        ]
+        ],
+        "no-unused-vars": "off"
     }
 }
