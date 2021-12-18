@@ -1,0 +1,43 @@
+{
+  "name": "bo4e-ts",
+  "version": "0.0.1",
+  "description": "Geschäftsobjekte der Energiewirtschaft (BO4E) TS-Library",
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "scripts": {
+    "test": "jest",
+    "prepare": "npm run build",
+    "build": "tsc"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "moduleFileExtensions": [
+      "ts",
+      "js"
+    ],
+    "testRegex": "^.+\\.spec\\.ts$"
+  },
+  "files": [
+    "lib"
+  ],
+  "keywords": [
+    "bo4e",
+    "EnWi",
+    "OpenEnWi",
+    "Energiewirtschaft",
+    "TS",
+    "TypeScript",
+    "lib",
+    "Libray"
+  ],
+  "author": "Fabian Angst",
+  "license": "MPL-2.0",
+  "devDependencies": {
+    "@types/jest": "^27.0.3",
+    "jest": "^27.4.5",
+    "ts-jest": "^27.1.2",
+    "typescript": "^4.5.4"
+  }
+}
