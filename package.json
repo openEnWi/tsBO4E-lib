@@ -5,8 +5,9 @@
   "main": "lib/public_api.js",
   "typings": "lib/public_api.d.ts",
   "scripts": {
+    "lint": "npx eslint src/**",
     "test": "jest",
-    "prepare": "npm run test && npm run build && npm run docs:generate",
+    "prepare": "npm run lint && npm run test && npm run build && npm run docs:generate",
     "build": "tsc",
     "docs:generate": "npx typedoc"
   },
@@ -37,6 +38,11 @@
   "license": "MPL-2.0",
   "devDependencies": {
     "@types/jest": "^27.0.3",
+    "@typescript-eslint/eslint-plugin": "^5.7.0",
+    "@typescript-eslint/parser": "^5.7.0",
+    "eslint": "^8.5.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-jest": "^25.3.0",
     "jest": "^27.4.5",
     "ts-jest": "^27.1.2",
     "typedoc": "^0.22.10",
