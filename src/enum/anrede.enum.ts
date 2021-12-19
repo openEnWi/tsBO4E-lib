@@ -1,4 +1,4 @@
-import {EnumLabels} from './enum-labels';
+import {EnumLabels} from './util/enum-labels';
 
 /**
  * Übersicht möglicher Anreden, z.B. eines Geschäftspartners.

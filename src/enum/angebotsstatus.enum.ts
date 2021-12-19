@@ -5,7 +5,7 @@
  *
  * @see [ENUM Angebotsstatus](https://www.bo4e.de/dokumentation/enumerations/enum-angebotsstatus)
  */
-import {EnumLabels} from './enum-labels';
+import {EnumLabels} from './util/enum-labels';
 
 export enum Angebotsstatus {
     KONZEPTION = 'KONZEPTION',
