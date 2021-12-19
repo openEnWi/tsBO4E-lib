@@ -24,5 +24,8 @@ export * from './kalkulationsmethode.enum';
 export * from './kontaktart.enum';
 export * from './kostenklasse.enum';
 export * from './kundengruppe.enum';
+export * from './kundengruppe-ka.enum';
+export * from './kundentyp.enum';
+export * from './landescode.enum';
 
 export * from './sparte.enum';
