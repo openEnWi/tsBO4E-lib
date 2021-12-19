@@ -7,3 +7,4 @@ export * from './auf-abschlagsziel.enum';
 export * from './ausschreibungsportal.enum';
 export * from './ausschreibungsstatus.enum';
 export * from './ausschreibungstyp.enum';
+export * from './bdew-artikelnummer.enum';
