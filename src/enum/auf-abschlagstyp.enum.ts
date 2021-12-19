@@ -15,7 +15,7 @@ export enum AufAbschlagstyp {
 /**
  * Liefert kurze textuelle Repräsentationen eines {@link AufAbschlagstyp}.
  */
-export const AufAbschlagstypLabel: EnumLabels<AufAbschlagstyp> = EnumLabels.create([
+export const AufAbschlagstypLabel: EnumLabels<AufAbschlagstyp> = EnumLabels.of([
   [AufAbschlagstyp.RELATIV, 'Prozentualer AufAbschlag'],
   [AufAbschlagstyp.ABSOLUT, 'Absoluter AufAbschlag'],
 ]);

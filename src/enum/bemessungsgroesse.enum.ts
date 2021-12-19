@@ -25,7 +25,7 @@ export enum Bemessungsgroesse {
 /**
  * Liefert kurze textuelle Repräsentationen einer {@link Bemessungsgroesse}.
  */
-export const BemessungsgroesseLabel: EnumLabels<Bemessungsgroesse> = EnumLabels.create([
+export const BemessungsgroesseLabel: EnumLabels<Bemessungsgroesse> = EnumLabels.of([
   [Bemessungsgroesse.WIRKARBEIT_EL, 'elektrische Wirkarbeit'],
   [Bemessungsgroesse.LEISTUNG_EL, 'elektrische Leistung'],
   [Bemessungsgroesse.BLINDARBEIT_KAP, 'Blindarbeit kapazitiv'],

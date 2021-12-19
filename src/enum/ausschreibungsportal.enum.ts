@@ -23,7 +23,7 @@ export enum Ausschreibungsportal {
 /**
  * Liefert kurze textuelle Repräsentationen eines {@link Ausschreibungsportal}.
  */
-export const AusschreibungsportalLabel: EnumLabels<Ausschreibungsportal> = EnumLabels.create([
+export const AusschreibungsportalLabel: EnumLabels<Ausschreibungsportal> = EnumLabels.of([
   [Ausschreibungsportal.ENPORTAL, 'enPORTAL'],
   [Ausschreibungsportal.ENERGIE_AGENTUR, 'EnergieAgentur.NRW'],
   [Ausschreibungsportal.BMWI, 'BMWI-Ausschreibungen'],

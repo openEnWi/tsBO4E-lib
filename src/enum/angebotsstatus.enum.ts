@@ -22,7 +22,7 @@ export enum Angebotsstatus {
 /**
  * Liefert kurze textuelle Repräsentationen eines {@link Angebotsstatus}.
  */
-export const AngebotsstatusLabel: EnumLabels<Angebotsstatus> = EnumLabels.create([
+export const AngebotsstatusLabel: EnumLabels<Angebotsstatus> = EnumLabels.of([
   [Angebotsstatus.KONZEPTION, 'Konzeption'],
   [Angebotsstatus.UNVERBINDLICH, 'unverbindlich'],
   [Angebotsstatus.VERBINDLICH, 'verbindlich'],

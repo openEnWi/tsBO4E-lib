@@ -22,7 +22,7 @@ export enum Gebiettyp {
 /**
  * Liefert kurze textuelle Repräsentationen eines {@link Gebiettyp}.
  */
-export const GebiettypLabel: EnumLabels<Gebiettyp> = EnumLabels.create([
+export const GebiettypLabel: EnumLabels<Gebiettyp> = EnumLabels.of([
   [Gebiettyp.REGELZONE, 'Regelzone'],
   [Gebiettyp.MARKTGEBIET, 'Marktgebiet'],
   [Gebiettyp.BILANZIERUNGSGEBIET, 'Bilanzierungsgebiet'],

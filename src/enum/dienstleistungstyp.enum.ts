@@ -49,7 +49,7 @@ export enum Dienstleistungstyp {
 /**
  * Liefert kurze textuelle Repräsentationen eines {@link Dienstleistungstyp}.
  */
-export const DienstleistungstypLabel: EnumLabels<Dienstleistungstyp> = EnumLabels.create([
+export const DienstleistungstypLabel: EnumLabels<Dienstleistungstyp> = EnumLabels.of([
   [Dienstleistungstyp.DATENBEREITSTELLUNG_TAEGLICH, 'Datenbereitstellung täglich'],
   [Dienstleistungstyp.DATENBEREITSTELLUNG_WOECHENTLICH, 'Datenbereitstellung wöchentlich'],
   [Dienstleistungstyp.DATENBEREITSTELLUNG_MONATLICH, 'Datenbereitstellung monatlich'],

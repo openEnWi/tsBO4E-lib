@@ -51,7 +51,7 @@ export enum Geraetemerkmal {
 /**
  * Liefert kurze textuelle Repräsentationen eines {@link Geraetemerkmal}.
  */
-export const GeraetemerkmalLabel: EnumLabels<Geraetemerkmal> = EnumLabels.create([
+export const GeraetemerkmalLabel: EnumLabels<Geraetemerkmal> = EnumLabels.of([
   [Geraetemerkmal.EINTARIF, 'Eintarifzähler'],
   [Geraetemerkmal.ZWEITARIF, 'Zweitarifzähler'],
   [Geraetemerkmal.MEHRTARIF, 'Mehrtarifzähler'],

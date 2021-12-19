@@ -15,7 +15,7 @@ export enum Energierichtung {
 /**
  * Liefert kurze textuelle Repräsentationen einer {@link Energierichtung}.
  */
-export const EnergierichtungLabel: EnumLabels<Energierichtung> = EnumLabels.create([
+export const EnergierichtungLabel: EnumLabels<Energierichtung> = EnumLabels.of([
   [Energierichtung.AUSSP, 'Ausspeisung'],
   [Energierichtung.EINSP, 'Einspeisung'],
 ]);

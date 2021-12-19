@@ -18,7 +18,7 @@ export enum Anrede {
 /**
  * Liefert kurze textuelle Repräsentationen einer {@link Anrede}.
  */
-export const AnredeLabel: EnumLabels<Anrede> = EnumLabels.create([
+export const AnredeLabel: EnumLabels<Anrede> = EnumLabels.of([
   [Anrede.HERR, 'Herr'],
   [Anrede.FRAU, 'Frau'],
   [Anrede.EHELEUTE, 'Eheleute'],

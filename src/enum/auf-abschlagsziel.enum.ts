@@ -19,7 +19,7 @@ export enum AufAbschlagsziel {
 /**
  * Liefert kurze textuelle Repräsentationen eines {@link AufAbschlagsziel}.
  */
-export const AufAbschlagszielLabel: EnumLabels<AufAbschlagsziel> = EnumLabels.create([
+export const AufAbschlagszielLabel: EnumLabels<AufAbschlagsziel> = EnumLabels.of([
   [AufAbschlagsziel.ARBEITSPREIS_EINTARIF, 'Auf/Abschlag auf den Arbeitspreis Eintarif'],
   [AufAbschlagsziel.ARBEITSPREIS_HT, 'Auf/Abschlag auf den Arbeitspreis HT'],
   [AufAbschlagsziel.ARBEITSPREIS_NT, 'Auf/Abschlag auf den Arbeitspreis NT'],

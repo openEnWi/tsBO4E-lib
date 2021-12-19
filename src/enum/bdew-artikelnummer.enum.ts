@@ -59,7 +59,7 @@ export enum BdewArtikelnummer {
 /**
  * Liefert kurze textuelle Repräsentationen einer {@link BdewArtikelnummer}.
  */
-export const BdewArtikelnummerLabel: EnumLabels<BdewArtikelnummer> = EnumLabels.create([
+export const BdewArtikelnummerLabel: EnumLabels<BdewArtikelnummer> = EnumLabels.of([
   [BdewArtikelnummer.LEISTUNG, 'Leistung'],
   [BdewArtikelnummer.LEISTUNG_PAUSCHAL, 'Leistung pauschal'],
   [BdewArtikelnummer.GRUNDPREIS, 'Grundpreis'],

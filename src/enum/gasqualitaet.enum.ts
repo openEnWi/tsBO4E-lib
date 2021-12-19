@@ -15,7 +15,7 @@ export enum Gasqualitaet {
 /**
  * Liefert kurze textuelle Repräsentationen der {@link Gasqualitaet}.
  */
-export const GasqualitaetLabel: EnumLabels<Gasqualitaet> = EnumLabels.create([
+export const GasqualitaetLabel: EnumLabels<Gasqualitaet> = EnumLabels.of([
   [Gasqualitaet.H_GAS, 'High Caloric Gas'],
   [Gasqualitaet.L_GAS, 'Low Caloric Gas'],
 ]);

@@ -14,7 +14,7 @@ describe('EnumLabels', () => {
   ];
 
   beforeEach(() => {
-    enumLabels = EnumLabels.create(mockLabelEntries);
+    enumLabels = EnumLabels.of(mockLabelEntries);
   });
 
   it('should create', () => {
@@ -22,15 +22,15 @@ describe('EnumLabels', () => {
   });
 
   it('should return labels for known entries', () => {
-    expect(enumLabels.getLabel(MockEnum.BAR)).toEqual('bar');
-    expect(enumLabels.getLabel(MockEnum.FOO)).toEqual('Foo');
+    expect(enumLabels.getValue(MockEnum.BAR)).toEqual('bar');
+    expect(enumLabels.getValue(MockEnum.FOO)).toEqual('Foo');
   });
 
   it('should return undefined for unknown entries', () => {
-    expect(enumLabels.getLabel(MockEnum.BAZ)).toBeUndefined();
+    expect(enumLabels.getValue(MockEnum.BAZ)).toBeUndefined();
   });
 
   it('should return undefined for unknown enum member', () => {
-    expect(enumLabels.getLabel('RANDOM' as unknown as MockEnum)).toBeUndefined();
+    expect(enumLabels.getValue('RANDOM' as unknown as MockEnum)).toBeUndefined();
   });
 });

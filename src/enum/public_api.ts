@@ -17,3 +17,12 @@ export * from './erzeugungsart.enum';
 export * from './gasqualitaet.enum';
 export * from './gebiettyp.enum';
 export * from './geraetemerkmal.enum';
+export * from './geraetetyp.enum';
+export * from './geschaeftspartnerrolle.enum';
+export * from './gueltigkeitstyp.enum';
+export * from './kalkulationsmethode.enum';
+export * from './kontaktart.enum';
+export * from './kostenklasse.enum';
+export * from './kundengruppe.enum';
+
+export * from './sparte.enum';

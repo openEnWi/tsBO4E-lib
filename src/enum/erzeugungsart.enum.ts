@@ -28,7 +28,7 @@ export enum Erzeugungsart {
 /**
  * Liefert kurze textuelle Repräsentationen einer {@link Erzeugungsart}.
  */
-export const ErzeugungsartLabel: EnumLabels<Erzeugungsart> = EnumLabels.create([
+export const ErzeugungsartLabel: EnumLabels<Erzeugungsart> = EnumLabels.of([
   [Erzeugungsart.FOSSIL, 'Fossile Brennstoffe'],
   [Erzeugungsart.KWK, 'Kraft-Waerme-Koppelung'],
   [Erzeugungsart.WIND, 'Windkraft'],

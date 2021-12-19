@@ -16,7 +16,7 @@ export enum Ausschreibungstyp {
 /**
  * Liefert kurze textuelle Repräsentationen eines {@link Ausschreibungstyp}.
  */
-export const AusschreibungsstypLabel: EnumLabels<Ausschreibungstyp> = EnumLabels.create([
+export const AusschreibungsstypLabel: EnumLabels<Ausschreibungstyp> = EnumLabels.of([
   [Ausschreibungstyp.PRIVATRECHTLICH, 'privat-rechtlich'],
   [Ausschreibungstyp.OEFFENTLICHRECHTLICH, 'öffentlich-rechtlich'],
   [Ausschreibungstyp.EUROPAWEIT, 'europaweit'],

@@ -17,7 +17,7 @@ export enum Ausschreibungsstatus {
 /**
  * Liefert kurze textuelle Repräsentationen eines {@link Ausschreibungsstatus}.
  */
-export const AusschreibungsstatusLabel: EnumLabels<Ausschreibungsstatus> = EnumLabels.create([
+export const AusschreibungsstatusLabel: EnumLabels<Ausschreibungsstatus> = EnumLabels.of([
   [Ausschreibungsstatus.PHASE1, 'Phase1: Teilnahmewettbewerb'],
   [Ausschreibungsstatus.PHASE2, 'Phase2: Angebotsphase'],
   [Ausschreibungsstatus.PHASE3, 'Phase3: Verhandlungsphase'],

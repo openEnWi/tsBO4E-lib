@@ -18,7 +18,7 @@ export enum Bilanzierungsmethode {
 /**
  * Liefert kurze textuelle Repräsentationen einer {@link Bilanzierungsmethode}.
  */
-export const BilanzierungsmethodeLabel: EnumLabels<Bilanzierungsmethode> = EnumLabels.create([
+export const BilanzierungsmethodeLabel: EnumLabels<Bilanzierungsmethode> = EnumLabels.of([
   [Bilanzierungsmethode.RLM, 'Registrierende Leistungsmessung'],
   [Bilanzierungsmethode.SLP, 'Standard Lastprofil'],
   [Bilanzierungsmethode.TLP_GEMEINSAM, 'TLP gemeinsame Messung'],
