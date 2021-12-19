@@ -1,0 +1,93 @@
+import {EnumLabels} from './util/enum-labels';
+
+/**
+ * Auflistung möglicher Gerätemerkmale.
+ *
+ * veröffentlicht am 18. April 2018
+ *
+ * @see [ENUM Geraetemerkmal](https://www.bo4e.de/dokumentation/enumerations/enum-geraetemerkmal)
+ */
+export enum Geraetemerkmal {
+    EINTARIF = 'EINTARIF',
+    ZWEITARIF = 'ZWEITARIF',
+    MEHRTARIF = 'MEHRTARIF',
+    GAS_G2_5 = 'GAS_G2_5',
+    GAS_G4 = 'GAS_G4',
+    GAS_G6 = 'GAS_G6',
+    GAS_G10 = 'GAS_G10',
+    GAS_G16 = 'GAS_G16',
+    GAS_G25 = 'GAS_G25',
+    GAS_G40 = 'GAS_G40',
+    GAS_G65 = 'GAS_G65',
+    GAS_G100 = 'GAS_G100',
+    GAS_G160 = 'GAS_G160',
+    GAS_G250 = 'GAS_G250',
+    GAS_G400 = 'GAS_G400',
+    GAS_G650 = 'GAS_G650',
+    GAS_G1000 = 'GAS_G1000',
+    GAS_G1600 = 'GAS_G1600',
+    GAS_G2500 = 'GAS_G2500',
+    IMPULSGEBER_G4_G100 = 'IMPULSGEBER_G4_G100',
+    IMPULSGEBER_G100 = 'IMPULSGEBER_G100',
+    TELEFONANSCHLUSS = 'TELEFONANSCHLUSS',
+    MODEM_GSM = 'MODEM_GSM',
+    MODEM_GPRS = 'MODEM_GPRS',
+    MODEM_FUNK = 'MODEM_FUNK',
+    MODEM_GSM_O_LG = 'MODEM_GSM_O_LG',
+    MODEM_GSM_M_LG = 'MODEM_GSM_M_LG',
+    MODEM_FESTNETZ = 'MODEM_FESTNETZ',
+    MODEM_GPRS_M_LG = 'MODEM_GPRS_M_LG',
+    PLC_KOM = 'PLC_KOM',
+    ETHERNET_KOM = 'ETHERNET_KOM',
+    DSL_KOM = 'DSL_KOM',
+    LTE_KOM = 'LTE_KOM',
+    KOMPAKT_MU = 'KOMPAKT_MU',
+    SYSTEM_MU = 'SYSTEM_MU',
+    TEMPERATUR_MU = 'TEMPERATUR_MU',
+    ZUSTANDS_MU = 'ZUSTANDS_MU',
+    UNBESTIMMT = 'UNBESTIMMT',
+}
+
+/**
+ * Liefert kurze textuelle Repräsentationen eines {@link Geraetemerkmal}.
+ */
+export const GeraetemerkmalLabel: EnumLabels<Geraetemerkmal> = EnumLabels.create([
+  [Geraetemerkmal.EINTARIF, 'Eintarifzähler'],
+  [Geraetemerkmal.ZWEITARIF, 'Zweitarifzähler'],
+  [Geraetemerkmal.MEHRTARIF, 'Mehrtarifzähler'],
+  [Geraetemerkmal.GAS_G2_5, 'Gaszähler Größe G2.5'],
+  [Geraetemerkmal.GAS_G4, 'Gaszähler Größe G4'],
+  [Geraetemerkmal.GAS_G6, 'Gaszähler Größe G6'],
+  [Geraetemerkmal.GAS_G10, 'Gaszähler Größe G10'],
+  [Geraetemerkmal.GAS_G16, 'Gaszähler Größe G16'],
+  [Geraetemerkmal.GAS_G25, 'Gaszähler Größe G25'],
+  [Geraetemerkmal.GAS_G40, 'Gaszähler Größe G40'],
+  [Geraetemerkmal.GAS_G65, 'Gaszähler Größe G65'],
+  [Geraetemerkmal.GAS_G100, 'Gaszähler Größe G100'],
+  [Geraetemerkmal.GAS_G160, 'Gaszähler Größe G160'],
+  [Geraetemerkmal.GAS_G250, 'Gaszähler Größe G250'],
+  [Geraetemerkmal.GAS_G400, 'Gaszähler Größe G400'],
+  [Geraetemerkmal.GAS_G650, 'Gaszähler Größe G650'],
+  [Geraetemerkmal.GAS_G1000, 'Gaszähler Größe G1000'],
+  [Geraetemerkmal.GAS_G1600, 'Gaszähler Größe G1600'],
+  [Geraetemerkmal.GAS_G2500, 'Gaszähler Größe G2500'],
+  [Geraetemerkmal.IMPULSGEBER_G4_G100, 'Impulsgeber für Zähler G4 - G100'],
+  [Geraetemerkmal.IMPULSGEBER_G100, 'Impulsgeber für Zähler größer G100'],
+  [Geraetemerkmal.TELEFONANSCHLUSS, 'Telefonanschluss'],
+  [Geraetemerkmal.MODEM_GSM, 'Modem-GSM'],
+  [Geraetemerkmal.MODEM_GPRS, 'Modem-GPRS'],
+  [Geraetemerkmal.MODEM_FUNK, 'Modem-Funk'],
+  [Geraetemerkmal.MODEM_GSM_O_LG, 'vom Messstellenbetreiber beigestelltes GSM-Modem ohne Lastgangmessung'],
+  [Geraetemerkmal.MODEM_GSM_M_LG, 'vom Messstellenbetreiber beigestelltes GSM-Modem mit Lastgangmessung'],
+  [Geraetemerkmal.MODEM_FESTNETZ, 'vom Messstellenbetreiber beigestelltes Festnetz-Modem'],
+  [Geraetemerkmal.MODEM_GPRS_M_LG, 'vom Messstellenbetreiber bereitgestelltes GPRS-Modem Lastgangmessung'],
+  [Geraetemerkmal.PLC_KOM, 'PLC-Kom.-Einrichtung ,Powerline Communication)'],
+  [Geraetemerkmal.ETHERNET_KOM, 'Ethernet-Kom.-Einricht. LAN/WLAN'],
+  [Geraetemerkmal.DSL_KOM, 'DSL-Kommunikationseinrichtung'],
+  [Geraetemerkmal.LTE_KOM, 'LTE-Kommunikationseinrichtung'],
+  [Geraetemerkmal.KOMPAKT_MU, 'Kompaktmengenumwerter'],
+  [Geraetemerkmal.SYSTEM_MU, 'Systemmengenumwerter'],
+  [Geraetemerkmal.TEMPERATUR_MU, 'Temperaturmengenumwerter'],
+  [Geraetemerkmal.ZUSTANDS_MU, 'Zustandsmengenumwerter'],
+  [Geraetemerkmal.UNBESTIMMT, 'Unbestimmtes Merkmal'],
+]);
