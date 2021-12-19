@@ -11,9 +11,11 @@
     "lint": "npx eslint src/**/*.ts",
     "test": "jest",
     "test:dev": "jest --watchAll",
-    "prepare": "npm run lint && npm run test && npm run build && npm run docs:generate",
+    "run:all": "npm run lint && npm run test && npm run build && npm run docs:generate && npm run docs:add",
     "build": "tsc",
-    "docs:generate": "npx typedoc"
+    "docs:generate": "npx typedoc",
+    "docs:add": "git add ./docs",
+    "prepare": "husky install"
   },
   "jest": {
     "transform": {
@@ -47,6 +49,7 @@
     "eslint": "^8.5.0",
     "eslint-config-google": "^0.14.0",
     "eslint-plugin-jest": "^25.3.0",
+    "husky": "^7.0.4",
     "jest": "^27.4.5",
     "ts-jest": "^27.1.2",
     "typedoc": "^0.22.10",
