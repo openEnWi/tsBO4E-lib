@@ -28,5 +28,8 @@ export * from './kundengruppe-ka.enum';
 export * from './kundentyp.enum';
 export * from './landescode.enum';
 export * from './leistungstyp.enum';
+export * from './lokationstyp.enum';
+export * from './marktrolle.enum';
+export * from './medium.enum';
 
 export * from './sparte.enum';
