@@ -27,5 +27,6 @@ export * from './kundengruppe.enum';
 export * from './kundengruppe-ka.enum';
 export * from './kundentyp.enum';
 export * from './landescode.enum';
+export * from './leistungstyp.enum';
 
 export * from './sparte.enum';
