@@ -40,5 +40,11 @@ export * from './messwertstatuszusatz.enum';
 export * from './netzebene.enum';
 export * from './nn-rechnungsart.enum';
 export * from './nn-rechnungstyp.enum';
+export * from './oekolabel.enum';
+export * from './oekozertifikat.enum';
+export * from './preisgarantietyp.enum';
+export * from './preismodell.enum';
+export * from './preisstatus.enum';
+export * from './preistyp.enum';
 
 export * from './sparte.enum';
