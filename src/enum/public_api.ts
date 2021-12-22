@@ -31,5 +31,14 @@ export * from './leistungstyp.enum';
 export * from './lokationstyp.enum';
 export * from './marktrolle.enum';
 export * from './medium.enum';
+export * from './mengeneinheit.enum';
+export * from './mengenoperator.enum';
+export * from './messart.enum';
+export * from './messgroesse.enum';
+export * from './messpreistyp.enum';
+export * from './messwertstatuszusatz.enum';
+export * from './netzebene.enum';
+export * from './nn-rechnungsart.enum';
+export * from './nn-rechnungstyp.enum';
 
 export * from './sparte.enum';
