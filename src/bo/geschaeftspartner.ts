@@ -18,7 +18,7 @@ import {Adresse} from 'com/adresse';
  *
  * @see [BO Geschaeftspartner](https://www.bo4e.de/dokumentation/geschaeftsobjekte/bo-geschaftspartner)
  */
-export interface IGschaeftspartner extends IGeschaeftsobjekt {
+export interface IGeschaeftspartner extends IGeschaeftsobjekt {
   anrede?: Anrede;
   name1: string;
   name2?: string;
@@ -36,7 +36,7 @@ export interface IGschaeftspartner extends IGeschaeftsobjekt {
 }
 
 /** @inheritDoc */
-export class Geschaeftspartner extends Geschaeftsobjekt implements IGschaeftspartner {
+export class Geschaeftspartner extends Geschaeftsobjekt implements IGeschaeftspartner {
   boTyp: BoTyp = BoTyp.GESCHAEFTSPARTNER;
 
   anrede?: Anrede;
