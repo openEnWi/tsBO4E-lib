@@ -2,11 +2,11 @@ import {Sparte} from 'enum/sparte.enum';
 import {IGeschaeftspartner} from 'bo/geschaeftspartner';
 import {IAnsprechpartner} from 'bo/ansprechpartner';
 import {Angebotsvariante} from 'com/angebotsvariante';
-import {Geschaeftsobjekt} from 'bo/geschaeftsobjekt';
+import {Geschaeftsobjekt, IGeschaeftsobjekt} from 'bo/geschaeftsobjekt';
 import {BoTyp} from 'enum/bo-typ.enum';
 import {ExterneReferenz} from 'com/externe-referenz';
 
-export interface IAngebot {
+export interface IAngebot extends IGeschaeftsobjekt {
   angebotsnummer: string;
   angebotsdatum: Date;
   angebotsgeber: IGeschaeftspartner;
