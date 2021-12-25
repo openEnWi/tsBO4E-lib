@@ -24,6 +24,7 @@ export * from './messlokationszuordnung';
 export * from './positions-auf-abschlag';
 export * from './preis';
 export * from './preisgarantie';
+export * from './preisposition';
 export * from './preisstaffel';
 export * from './rechnungsposition';
 export * from './regionale-gueltigkeit';
