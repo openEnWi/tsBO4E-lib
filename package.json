@@ -1,9 +1,9 @@
 {
-  "name": "bo4e-ts",
+  "name": "@openenwi/bo4e-ts",
   "version": "0.0.1",
   "description": "Geschäftsobjekte der Energiewirtschaft (BO4E) TS-Library",
   "main": "lib/public_api.js",
-  "typings": "lib/public_api.d.ts",
+  "types": "lib/public_api.d.ts",
   "repository": {
     "url": "https://github.com/openEnWi/tsBO4E-lib.git"
   },

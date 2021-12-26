@@ -1,0 +1,11 @@
+./.github
+./.husky
+./src
+./docs
+./node_modules
+./.idea!/.eslintrc.json
+/CODE_OF_CONDUCT.md
+/package-lock.json
+/tsconfig.json
+/typedoc.json
+/.gitignore
