@@ -11,8 +11,8 @@ describe('Bo4eLib', () => {
     expect(lib).toBeTruthy();
   });
 
-  it('should be version 1.1', () => {
-    expect(lib.getVersion()).toEqual(1.1);
-    expect(Bo4eLib.VERSION).toEqual(1.1);
+  it('should be version 2.0', () => {
+    expect(lib.getVersion()).toEqual(2.0);
+    expect(Bo4eLib.VERSION).toEqual(2.0);
   });
 });

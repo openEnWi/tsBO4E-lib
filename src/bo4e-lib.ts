@@ -3,7 +3,7 @@
  */
 export class Bo4eLib {
   /** Aktuelle Version des implementierten BO4E-Standards */
-  public static readonly VERSION = 1.1;
+  public static readonly VERSION = 2.0;
 
   /**
    * Liefert die Version des aktuell implementierten BO4E Standards zurück.
