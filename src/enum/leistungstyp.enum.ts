@@ -3,8 +3,8 @@ import {EnumLabels} from './util/enum-labels';
 /**
  * Leistungstyp
  *
- * Version 1.1
- * veröffentlicht am 31. Mai 2021
+ * Version 1.2
+ * veröffentlicht am 23. Februar 2022
  *
  * @see [ENUM Leistungstyp](https://www.bo4e.de/dokumentation/enumerations/enum-leistungstyp/31-05-2021)
  */
@@ -40,6 +40,7 @@ export enum Leistungstyp {
     NETZPREIS = 'NETZPREIS',
     MESSPREIS = 'MESSPREIS',
     SONSTIGER_PREIS = 'SONSTIGER_PREIS',
+    DIENSTLEISTUNG = 'DIENSTLEISTUNG',
 }
 
 /**
@@ -76,5 +77,6 @@ export const LeistungstypLabel: EnumLabels<Leistungstyp> = EnumLabels.of([
   [Leistungstyp.ENERGIESTEUER, 'Strom- oder Erdgassteuer'],
   [Leistungstyp.NETZPREIS, 'Netzpreis'],
   [Leistungstyp.MESSPREIS, 'Messpreis'],
-  [Leistungstyp.SONSTIGER_PREIS, 'Sonstiger_Preis'],
+  [Leistungstyp.SONSTIGER_PREIS, 'Sonstiger Preis'],
+  [Leistungstyp.DIENSTLEISTUNG, 'Dienstleistung'],
 ]);

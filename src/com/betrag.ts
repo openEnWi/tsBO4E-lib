@@ -5,7 +5,7 @@ import {Waehrungscode} from 'enum/waehrungscode.enum';
  * Summebeträge - beispielsweise in Angeboten und Rechnungen - als Geldbeträge abzubilden.
  * Die Einheit ist dabei immer die Hauptwährung also Euro, Dollar etc..
  *
- * veröffentlicht am 17. Januar 2018
+ * veröffentlicht am 07. März 2022
  *
  * @see [COM Betrag](https://www.bo4e.de/dokumentation/komponenten/com-betrag)
  */

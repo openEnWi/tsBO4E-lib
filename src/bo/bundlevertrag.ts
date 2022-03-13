@@ -18,7 +18,7 @@ export interface IBundlevertrag extends IVertrag {
  * Abbildung eines Bündelvertrags.
  * Es handelt sich hierbei um eine Liste von Einzelverträgen, die in einem Vertragsobjekt gebündelt sind.
  *
- * veröffentlicht am 05. September 2018
+ * veröffentlicht am 02. März 2022
  *
  * @see [BO Buendelvertrag](https://www.bo4e.de/dokumentation/geschaeftsobjekte/bo-buendelvertrag)
  */
@@ -35,10 +35,10 @@ export class Bundlevertrag extends Geschaeftsobjekt implements IBundlevertrag {
    * @param {Date} vertragsende
    * @param {IGeschaeftspartner} vertragspartner1
    * @param {IGeschaeftspartner} vertragspartner2
-   * @param {Unterschrift} unterzeichnervp1
-   * @param {Unterschrift} unterzeichnervp2
-   * @param {Set<Vertragskonditionen>} vertragskonditionen
+   * @param {Unterschrift[]} unterzeichnervp1
+   * @param {Unterschrift[]} unterzeichnervp2
    * @param {Array<Vertragsteil>} vertragsteile
+   * @param {Vertragskonditionen} vertragskonditionen
    * @param {string} beschreibung
    * @param {Set<ExterneReferenz>} externeReferenzen
    */
@@ -51,10 +51,10 @@ export class Bundlevertrag extends Geschaeftsobjekt implements IBundlevertrag {
               public vertragsende: Date,
               public vertragspartner1: IGeschaeftspartner,
               public vertragspartner2: IGeschaeftspartner,
-              public unterzeichnervp1: Unterschrift,
-              public unterzeichnervp2: Unterschrift,
-              public vertragskonditionen: Set<Vertragskonditionen>,
+              public unterzeichnervp1: Unterschrift[],
+              public unterzeichnervp2: Unterschrift[],
               public vertragsteile: Array<Vertragsteil>,
+              public vertragskonditionen?: Vertragskonditionen,
               public beschreibung?: string,
               public externeReferenzen: Set<ExterneReferenz> = new Set<ExterneReferenz>()) {
     super(BoTyp.BUENDELVERTRAG, externeReferenzen);

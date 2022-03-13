@@ -3,9 +3,9 @@ import {EnumLabels} from './util/enum-labels';
 /**
  * Zur Kennzeichnung verschiedener Steuersätze und Verfahren.
  *
- * veröffentlicht am 06. Juni 2018
+ * veröffentlicht am 02. März 2022
  *
- * @see [ENUM Steuerkennzeichen](https://www.bo4e.de/dokumentation/enumerations/enum-steuerkennzeichen)
+ * @see [ENUM Steuerkennzeichen](https://www.bo4e.de/dokumentation/enumerations/enum-steuerkennzeichen/02-03-2022)
  */
 export enum Steuerkennzeichen {
     UST_0 = 'UST_0',
@@ -15,6 +15,7 @@ export enum Steuerkennzeichen {
     VST_19 = 'VST_19',
     VST_7 = 'VST_7',
     RCV = 'RCV',
+    UST_16 = 'UST_16'
 }
 
 /**
@@ -28,4 +29,5 @@ export const SteuerkennzeichenLabel: EnumLabels<Steuerkennzeichen> = EnumLabels.
   [Steuerkennzeichen.VST_19, 'Vorsteuer 19%'],
   [Steuerkennzeichen.VST_7, 'Vorsteuer 7%'],
   [Steuerkennzeichen.RCV, 'Reverse Charge Verfahren (Umkehrung der Steuerpflicht)'],
+  [Steuerkennzeichen.UST_16, 'Umsatzsteuer 16%'],
 ]);

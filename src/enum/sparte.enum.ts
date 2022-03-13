@@ -3,17 +3,18 @@ import {EnumLabels} from './util/enum-labels';
 /**
  * Unterscheidungsmöglichkeiten für die Sparte.
  *
- * veröffentlicht am 17. Januar 2018
+ * veröffentlicht am 02. März 2022
  *
- * @see [ENUM Sparte](https://www.bo4e.de/dokumentation/enumerations/enum-sparte)
+ * @see [ENUM Sparte](https://www.bo4e.de/dokumentation/enumerations/enum-sparte/02-03-2022)
  */
 export enum Sparte {
-    STROM = 'STROM',
-    GAS = 'GAS',
-    FERNWAERME = 'FERNWAERME',
-    NAHWAERME = 'NAHWAERME',
-    WASSER = 'WASSER',
-    ABWASSER = 'ABWASSER',
+  STROM = 'STROM',
+  GAS = 'GAS',
+  FERNWAERME = 'FERNWAERME',
+  NAHWAERME = 'NAHWAERME',
+  WASSER = 'WASSER',
+  ABWASSER = 'ABWASSER',
+  STROM_UND_GAS = 'STROM_UND_GAS'
 }
 
 /**
@@ -26,4 +27,5 @@ export const SparteLabel: EnumLabels<Sparte> = EnumLabels.of([
   [Sparte.NAHWAERME, 'Nahwärme'],
   [Sparte.WASSER, 'Wasserversorgung'],
   [Sparte.ABWASSER, 'Abwasserentsorgung'],
+  [Sparte.STROM_UND_GAS, 'Strom und Gas'],
 ]);

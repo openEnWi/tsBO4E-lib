@@ -18,10 +18,14 @@ export class ImmutableMap<K, V> {
    */
   protected constructor(entries: [K, V][]) {
     this.entries = new Map<K, V>(entries);
-    this.keyValuePairs = [...this.entries].map((entry) => ({
-      key: entry[0],
-      value: entry[1],
-    }));
+
+    this.keyValuePairs = [];
+    this.entries.forEach((v, k) =>
+      this.keyValuePairs.push({
+        key: k,
+        value: v,
+      }),
+    );
   }
 
   /**

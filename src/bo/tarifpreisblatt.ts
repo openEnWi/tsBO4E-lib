@@ -43,15 +43,17 @@ export class Tarifpreisblatt extends Geschaeftsobjekt implements ITarifpreisblat
    * @param {string} bezeichnung
    * @param {string} anbietername
    * @param {Sparte} sparte
-   * @param {Kundentyp} kundentyp
+   * @param {Kundentyp[]} kundentypen
    * @param {Tarifart} tarifart
    * @param {Tariftyp} tariftyp
-   * @param {Tarifmerkmal} tarifmerkmal
+   * @param {Tarifmerkmal[]} tarifmerkmale
    * @param {IMarktteilnehmer} anbieter
    * @param {Tarifeinschraenkung} tarifeinschraenkungen
    * @param {Preisgarantie} preisgarantien
    * @param {AufAbschlag} tarifAufAbschlaege
    * @param {string} website
+   * @param {string} bemerkung
+   * @param {Date} anwendungVon
    * @param {Zeitraum} zeitlicheGueltigkeit
    * @param {Energiemix} energiemix
    * @param {Vertragskonditionen} vertragskonditionen
@@ -63,15 +65,17 @@ export class Tarifpreisblatt extends Geschaeftsobjekt implements ITarifpreisblat
               public bezeichnung: string,
               public anbietername: string,
               public sparte: Sparte,
-              public kundentyp: Kundentyp,
+              public kundentypen: Kundentyp[],
               public tarifart: Tarifart,
               public tariftyp: Tariftyp,
-              public tarifmerkmal: Tarifmerkmal,
+              public tarifmerkmale: Tarifmerkmal[],
               public anbieter: IMarktteilnehmer,
               public tarifeinschraenkungen?: Tarifeinschraenkung,
               public preisgarantien?: Preisgarantie,
               public tarifAufAbschlaege?: AufAbschlag,
               public website?: string,
+              public bemerkung?: string,
+              public anwendungVon?: Date,
               public zeitlicheGueltigkeit?: Zeitraum,
               public energiemix?: Energiemix,
               public vertragskonditionen?: Vertragskonditionen,

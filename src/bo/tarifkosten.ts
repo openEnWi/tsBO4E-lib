@@ -32,12 +32,14 @@ export class Tarifkosten extends Geschaeftsobjekt implements ITarifkosten {
    * @param {string} bezeichnung
    * @param {string} anbietername
    * @param {Sparte} sparte
-   * @param {Kundentyp} kundentyp
+   * @param {Kundentyp[]} kundentypen
    * @param {Tarifart} tarifart
    * @param {Tariftyp} tariftyp
-   * @param {Tarifmerkmal} tarifmerkmal
+   * @param {Tarifmerkmal[]} tarifmerkmale
    * @param {IMarktteilnehmer} anbieter
    * @param {string} website
+   * @param {string} bemerkung
+   * @param {Date} anwendungVon
    * @param {Zeitraum} zeitlicheGueltigkeit
    * @param {Energiemix} energiemix
    * @param {Vertragskonditionen} vertragskonditionen
@@ -47,12 +49,14 @@ export class Tarifkosten extends Geschaeftsobjekt implements ITarifkosten {
               public bezeichnung: string,
               public anbietername: string,
               public sparte: Sparte,
-              public kundentyp: Kundentyp,
+              public kundentypen: Kundentyp[],
               public tarifart: Tarifart,
               public tariftyp: Tariftyp,
-              public tarifmerkmal: Tarifmerkmal,
+              public tarifmerkmale: Tarifmerkmal[],
               public anbieter: IMarktteilnehmer,
               public website?: string,
+              public bemerkung?: string,
+              public anwendungVon?: Date,
               public zeitlicheGueltigkeit?: Zeitraum,
               public energiemix?: Energiemix,
               public vertragskonditionen?: Vertragskonditionen,

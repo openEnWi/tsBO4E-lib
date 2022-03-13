@@ -18,10 +18,10 @@ export interface IVertrag extends IGeschaeftsobjekt {
   vertragsende: Date;
   vertragspartner1: IGeschaeftspartner;
   vertragspartner2: IGeschaeftspartner;
-  unterzeichnervp1: Unterschrift;
-  unterzeichnervp2: Unterschrift;
-  vertragskonditionen: Set<Vertragskonditionen>;
+  unterzeichnervp1: Unterschrift[];
+  unterzeichnervp2: Unterschrift[];
   vertragsteile: Array<Vertragsteil>;
+  vertragskonditionen?: Vertragskonditionen;
   beschreibung?: string;
 }
 
@@ -45,10 +45,10 @@ export class Vertrag extends Geschaeftsobjekt implements IVertrag {
    * @param {Date} vertragsende
    * @param {IGeschaeftspartner} vertragspartner1
    * @param {IGeschaeftspartner} vertragspartner2
-   * @param {Unterschrift} unterzeichnervp1
-   * @param {Unterschrift} unterzeichnervp2
-   * @param {Set<Vertragskonditionen>} vertragskonditionen
+   * @param {Unterschrift[]} unterzeichnervp1
+   * @param {Unterschrift[]} unterzeichnervp2
    * @param {Array<Vertragsteil>} vertragsteile
+   * @param {Vertragskonditionen} vertragskonditionen
    * @param {string} beschreibung
    * @param {Set<ExterneReferenz>} externeReferenzen
    */
@@ -60,10 +60,10 @@ export class Vertrag extends Geschaeftsobjekt implements IVertrag {
               public vertragsende: Date,
               public vertragspartner1: IGeschaeftspartner,
               public vertragspartner2: IGeschaeftspartner,
-              public unterzeichnervp1: Unterschrift,
-              public unterzeichnervp2: Unterschrift,
-              public vertragskonditionen: Set<Vertragskonditionen>,
+              public unterzeichnervp1: Unterschrift[],
+              public unterzeichnervp2: Unterschrift[],
               public vertragsteile: Array<Vertragsteil>,
+              public vertragskonditionen?: Vertragskonditionen,
               public beschreibung?: string,
               public externeReferenzen: Set<ExterneReferenz> = new Set<ExterneReferenz>()) {
     super(BoTyp.VERTRAG, externeReferenzen);

@@ -35,47 +35,51 @@ export interface ITarif extends ITarifinfo {
  */
 export class Tarif extends Geschaeftsobjekt implements ITarif {
   /**
-    * Constructor.
-    *
-    * @param {Date} preisstand
-    * @param {Tarifberechnungsparameter} berechnungsparameter
-    * @param {Array<TarifpreispositionProOrt>} tarifpreise
-    * @param {string} bezeichnung
-    * @param {string} anbietername
-    * @param {Sparte} sparte
-    * @param {Kundentyp} kundentyp
-    * @param {Tarifart} tarifart
-    * @param {Tariftyp} tariftyp
-    * @param {Tarifmerkmal} tarifmerkmal
-    * @param {IMarktteilnehmer} anbieter
-    * @param {Tarifeinschraenkung} tarifeinschraenkungen
-    * @param {Preisgarantie} preisgarantie
-    * @param {AufAbschlagRegional} tarifAufAbschlaege
-    * @param {string} website
-    * @param {Zeitraum} zeitlicheGueltigkeit
-    * @param {Energiemix} energiemix
-    * @param {Vertragskonditionen} vertragskonditionen
-    * @param {Set<ExterneReferenz>} externeReferenzen
-    */
+   * Constructor.
+   *
+   * @param {Date} preisstand
+   * @param {Tarifberechnungsparameter} berechnungsparameter
+   * @param {Array<TarifpreispositionProOrt>} tarifpreise
+   * @param {string} bezeichnung
+   * @param {string} anbietername
+   * @param {Sparte} sparte
+   * @param {Kundentyp[]} kundentypen
+   * @param {Tarifart} tarifart
+   * @param {Tariftyp} tariftyp
+   * @param {Tarifmerkmal[]} tarifmerkmale
+   * @param {IMarktteilnehmer} anbieter
+   * @param {Tarifeinschraenkung} tarifeinschraenkungen
+   * @param {Preisgarantie} preisgarantie
+   * @param {AufAbschlagRegional} tarifAufAbschlaege
+   * @param {string} website
+   * @param {string} bemerkung
+   * @param {Date} anwendungVon
+   * @param {Zeitraum} zeitlicheGueltigkeit
+   * @param {Energiemix} energiemix
+   * @param {Vertragskonditionen} vertragskonditionen
+   * @param {Set<ExterneReferenz>} externeReferenzen
+   */
   constructor(public preisstand: Date,
-               public berechnungsparameter: Tarifberechnungsparameter,
-               public tarifpreise: Array<TarifpreispositionProOrt>,
-               public bezeichnung: string,
-               public anbietername: string,
-               public sparte: Sparte,
-               public kundentyp: Kundentyp,
-               public tarifart: Tarifart,
-               public tariftyp: Tariftyp,
-               public tarifmerkmal: Tarifmerkmal,
-               public anbieter: IMarktteilnehmer,
-               public tarifeinschraenkungen?: Tarifeinschraenkung,
-               public preisgarantie?: Preisgarantie,
-               public tarifAufAbschlaege?: AufAbschlagRegional,
-               public website?: string,
-               public zeitlicheGueltigkeit?: Zeitraum,
-               public energiemix?: Energiemix,
-               public vertragskonditionen?: Vertragskonditionen,
-               public externeReferenzen: Set<ExterneReferenz> = new Set<ExterneReferenz>()) {
+              public berechnungsparameter: Tarifberechnungsparameter,
+              public tarifpreise: Array<TarifpreispositionProOrt>,
+              public bezeichnung: string,
+              public anbietername: string,
+              public sparte: Sparte,
+              public kundentypen: Kundentyp[],
+              public tarifart: Tarifart,
+              public tariftyp: Tariftyp,
+              public tarifmerkmale: Tarifmerkmal[],
+              public anbieter: IMarktteilnehmer,
+              public tarifeinschraenkungen?: Tarifeinschraenkung,
+              public preisgarantie?: Preisgarantie,
+              public tarifAufAbschlaege?: AufAbschlagRegional,
+              public website?: string,
+              public bemerkung?: string,
+              public anwendungVon?: Date,
+              public zeitlicheGueltigkeit?: Zeitraum,
+              public energiemix?: Energiemix,
+              public vertragskonditionen?: Vertragskonditionen,
+              public externeReferenzen: Set<ExterneReferenz> = new Set<ExterneReferenz>()) {
     super(BoTyp.TARIF, externeReferenzen);
   }
 }

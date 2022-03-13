@@ -7,7 +7,7 @@ import {Waehrungseinheit} from 'enum/waehrungseinheit.enum';
  * die individuell zu einem neuen oder bestehenden Liefervertrag abgeschlossen werden können.
  * Es können mehrere Auf-/Abschläge gleichzeitig ausgewählt werden.
  *
- * veröffentlicht am 11. April 2018
+ * veröffentlicht am 04. März 2022
  *
  * @see [COM PositionsAufAbschlag](https://www.bo4e.de/dokumentation/komponenten/com-positionsaufabschlag)
  */
@@ -16,15 +16,15 @@ export class PositionsAufAbschlag {
    * Constructor.
    *
    * @param {string} bezeichnung
-   * @param {string} beschreibung
    * @param {AufAbschlagstyp} aufAbschlagstyp
    * @param {number} aufAbschlagswert
    * @param {Waehrungseinheit} aufAbschlagswaehrung
+   * @param {string} beschreibung
    */
   constructor(public bezeichnung: string,
-              public beschreibung: string,
               public aufAbschlagstyp: AufAbschlagstyp,
               public aufAbschlagswert: number,
-              public aufAbschlagswaehrung: Waehrungseinheit) {
+              public aufAbschlagswaehrung: Waehrungseinheit,
+              public beschreibung?: string) {
   }
 }
